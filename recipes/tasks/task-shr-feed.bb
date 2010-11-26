@@ -1,5 +1,5 @@
 DESCRIPTION = "SHR Feed"
-PR = "r83"
+PR = "r85"
 PV = "1.0"
 LICENSE = "GPL"
 
@@ -79,7 +79,6 @@ RDEPENDS_${PN} += "\
 		mtpaint \
 		telepathy-python \
 		intone-video \
-		ipkg-link \
 		ipkg-utils \
 		mysql \
 		fltk-chess \
@@ -103,6 +102,7 @@ RDEPENDS_${PN} += "\
 		vim \
 		vpnc \
 		emacs-x11 \
+		mg \
 		mcabber \
 		gdb \
 		oh-puzzles \
