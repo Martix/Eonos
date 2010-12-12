@@ -2,7 +2,7 @@ DESCRIPTION = "plugins for mythtv: A full featured personal video recorder syste
 HOMEPAGE = "http://www.mythtv.org"
 LICENSE = "GPLv2"
 
-DEPENDS = "flac taglib mythtv libvorbis libexif libvisual libsdl-x11 libcdaudio cdparanoia"
+DEPENDS = "flac taglib mythtv libvorbis libexif libvisual virtual/libsdl libcdaudio cdparanoia"
 RDEPENDS_${PN} = "mytharchive mythbrowser mythgallery mythgame mythmovies  \
                   mythmusic mythnetvision mythnews mythvideo mythweather mythzoneminder"
 RRECOMMENDS_${PN} = "mythweb-lighttpd"
@@ -26,10 +26,10 @@ DEPENDS += " libxml-xpath-perl-native libxml-simple-perl-native libdatetime-form
 RDEPENDS_mythweather += " libxml-xpath-perl libxml-simple-perl libdatetime-format-iso8601-perl \
 	libsoap-lite-perl libimage-size-perl libdate-manip-perl "
 
-PR = "svnr${SRCPV}+r6"
+PR = "svnr${SRCPV}+r0"
 PV = "0.23"
 
-SRCREV = "25609"
+SRCREV = "27202"
 SRC_URI = "svn://svn.mythtv.org/svn/branches/release-0-23-fixes;module=mythplugins;proto=http \
         file://sysroot.patch \
         file://mythplugins_wo_qtopengl.diff \
